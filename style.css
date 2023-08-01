@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+@font-face {
+    font-family: 'StardewFont';
+    src: url('fonts/Stardew_Valley.ttf');
+}
+
+.icon{
+    color: #000;
+    font-family: 'StardewFont';
+    font-size: 7rem; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    
+}
+li{
+    border-right: 1px;
+    float: left;
+    padding-left: 50px;
+}
+
+li a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'StardewFont';
+    font-size: 2rem;
+}
+li a:hover:not(.active) {
+    color: rgb(44, 43, 43);
+  }
+
+
+header{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 88, 49);
+    padding: 20px 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.main-container{
+    padding-left: 150px;
+    margin: 10px;
+    background-color: rgb(197, 197, 197);
+    align-content: center;    
+}
+
