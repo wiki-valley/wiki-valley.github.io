@@ -1,20 +1,18 @@
-*{
-    margin: 0;
-}
-
-body {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
 @font-face {
     font-family: 'StardewFont';
     src: url('fonts/Stardew_Valley.ttf');
 }
-
+body { 
+    display: grid;
+    font-family: Arial;
+    background-image: url(/image/bcg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .icon{
-    color: #000;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'StardewFont';
     font-size: 7rem; 
 }
@@ -38,6 +36,8 @@ li a{
     color: rgb(255, 255, 255);
     font-family: 'StardewFont';
     font-size: 2rem;
+    transition: ease;
+    transition-duration: .2s;
 }
 li a:hover:not(.active) {
     color: rgb(44, 43, 43);
@@ -50,15 +50,54 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(49, 88, 49);
+    background: rgb(38,250,32);
+    background: radial-gradient(circle, rgba(38,250,32,0.5144432773109244) 0%, rgba(26,89,27,0.5676645658263305) 100%);
     padding: 20px 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     
 }
 .main-container{
     padding-left: 150px;
-    margin: 10px;
-    background-color: rgb(197, 197, 197);
-    align-content: center;    
+    margin: 20px 100px 0 100px;
+    text-align: center;    
 }
 
+footer{
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.788)
+    
+}
+
+75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  
+  .label-welcome {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  main{
+    background: #ffffffbd;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: start;
+    display: grid;
+  }
