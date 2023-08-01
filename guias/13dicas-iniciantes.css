@@ -1,0 +1,28 @@
+body { 
+    display: grid;
+    font-family: Arial;
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/857227780209322756/171655C3AFF9316FE7FE3871BACDBFB4106E734D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main{
+    text-align: start;
+    display: grid;
+    word-wrap: break-word;
+}
+
+h1 {
+    text-align: center;
+}
+
+.img-content {
+    place-self: center;
+    width: 75vw;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url(https://i.pinimg.com/originals/b5/56/54/b556542bcb3da9817f28b54f7e6a7486.gif);     
+    }
+}
