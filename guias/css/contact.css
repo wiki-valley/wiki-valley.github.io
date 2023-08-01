@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
+    @font-face {
+        font-family: 'StardewFont';
+        src: url('/fonts/Stardew_Valley.ttf');
+    }
+
+.icon{
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'StardewFont';
+    font-size: 7rem; 
+}
+header a {
+    text-decoration: none;
+}
+
+.contact-container{
+    color: white;
+    align-content: center;
+}
+
+main 
+{
+        background: #000000bd;
+        padding: 1rem;
+        margin: 2rem;
+        text-align: start;
+        display: grid;
+        position: relative;
+        padding-bottom: 30rem;
+}
+body { 
+    display: grid;
+    font-family: Arial;
+    background-image: url(/image/bcg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+li{
+    border-right: 1px;
+    float: left;
+    padding-left: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    
+}
+li a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'StardewFont';
+    font-size: 2rem;
+    transition: ease;
+    transition-duration: .2s;
+}
+li a:hover:not(.active) {
+    color: rgb(44, 43, 43);
+  }
+
+header{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(38,250,32);
+    background: radial-gradient(circle, rgba(38,250,32,0.5144432773109244) 0%, rgba(26,89,27,0.5676645658263305) 100%);
+    padding: 20px 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+footer{
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.788)
+    
+}
+
+
