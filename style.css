@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
 @font-face {
     font-family: 'StardewFont';
     src: url('fonts/Stardew_Valley.ttf');
@@ -23,6 +25,12 @@ ul {
     overflow: hidden; 
     
 }
+
+h4{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
 li{
     border-right: 1px;
     float: left;
@@ -100,4 +108,10 @@ footer{
     margin: 2rem;
     text-align: start;
     display: grid;
+    font-family: 'Teko', sans-serif;
+    font-size: x-large;
+  }
+
+  .img-container{
+    padding-bottom: 40px;
   }

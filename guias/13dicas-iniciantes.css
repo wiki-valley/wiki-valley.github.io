@@ -54,7 +54,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(49, 88, 49);
+    background: rgb(38,250,32);
+    background: radial-gradient(circle, rgba(38,250,32,0.5144432773109244) 0%, rgba(26,89,27,0.5676645658263305) 100%);
     padding: 20px 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -87,9 +88,10 @@ h1 {
 */
 
 .icon {
-    color: #000;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'StardewFont';
-    font-size: 7rem;
+    font-size: 7rem; 
 }
 
 .img-content {
@@ -161,6 +163,13 @@ h1 {
     }
 }
 
+footer{
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.788)
+}
 
 /*
     SCROLLBAR
