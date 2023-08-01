@@ -1,1 +1,1 @@
-# wikivalley.github.io
+# wiki-valley.github.io
