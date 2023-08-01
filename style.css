@@ -6,7 +6,8 @@
 }
 
 body {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   font-family: Arial;
   background-image: url(/image/bcg.jpg);
   background-repeat: no-repeat;
@@ -29,26 +30,11 @@ body {
 
 }
 
-#sexo {
-  display: block;
-  background-color: #ffffffbd;
-  width: 2.5rem;
-  height: 2.5rem;
-  position: relative;
-  transition: ease .3s;
-}
-
-#sexo:hover .vertical-menu {
-  opacity: 1;
-}
-
 .vertical-menu {
   transition: ease .3s;
-  position: absolute;
   padding-left: 2rem;
   width: 200px;
   height: 100vh;
-  opacity: 0;
   transition: ease .3s;
 }
 
@@ -95,6 +81,7 @@ li {
 header {
   border-radius: 5px;
   display: flex;
+  grid-column: 1/9;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -111,6 +98,7 @@ header {
 }
 
 footer {
+  grid-column: 1/9;
   padding-bottom: 20px;
   text-align: center;
   color: white;
