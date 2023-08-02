@@ -52,14 +52,15 @@ main {
   background: #ffffffbd;
   padding: 1rem;
   margin: 2rem;
+  width: 80%;
+  justify-self: center;
   position: relative;
   text-align: start;
   font-family: 'Teko', sans-serif;
   font-size: x-large;
-}
-
-table {
-  height: 8vh;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #1111119d;
 }
 
 h4 {
@@ -118,17 +119,22 @@ footer {
   font-size: 7rem;
 }
 
+.principal{
+  display: grid;
+  grid-template-columns: 1fr 99fr;
+}
+
 .vertical-menu {
+  margin: 1vh 0vh;
+  width: 10vw;
   transition: ease .3s;
-  width: 200px;
-  transition: ease .3s;
+  display: grid;
+  background: #ffffffbd;
 }
 
 .vertical-menu a {
-  background: #ffffffbd;
+  margin: 3vh 0;
   color: rgb(80, 80);
-  display: flex;
-  padding: 12px;
   transition: ease .3s;
   text-decoration: none;
 }
@@ -142,8 +148,7 @@ footer {
 }
 
 .main-container {
-  margin: 1rem;
-  height: 75vh;
+  margin: 2rem 0;
   text-align: center;
 }
 
@@ -155,6 +160,7 @@ footer {
 }
 
 .glossary {
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -175,17 +181,12 @@ footer {
   height: auto;
 }
 
-.principal {
-  display: grid;
-  grid-template-columns: 1fr 99fr;
-}
-
 /* 
     MEDIA QUERIES
 */
 
 @media (max-width: 850px) {
-  #sexo {
+  .vertical-menu {
     display: none;
   }
 

@@ -183,6 +183,9 @@ main {
   display: grid;
   font-family: 'Teko', sans-serif;
   font-size: x-large;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #1111119d;
 }
 
 .conteudo {
