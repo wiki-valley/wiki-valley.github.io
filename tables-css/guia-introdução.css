@@ -34,6 +34,7 @@ header a {
   margin: auto 0;
   transition: ease .3s;
   height: fit-content;
+  width: fit-content;
   background: #ffffffbd;
   border-bottom: #a86603 .4rem ridge;
   border-top: #a86603 .4rem ridge;
@@ -130,7 +131,6 @@ li {
 header {
   border-radius: 5px;
   display: flex;
-  grid-column: 1/9;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +147,7 @@ header {
 }
 
 .list{
-  display: contents inline;
+  display: inline;
 }
 
 footer {
@@ -187,15 +187,11 @@ footer {
 main {
   background: #ffffffbd;
   padding: 1rem;
-  margin: 1rem;
-  width: 94%;
-  justify-self: center;
-  position: relative;
+  width: 95%;
   text-align: start;
   font-family: 'Teko', sans-serif;
   font-size: x-large;
   border: 1px solid;
-  padding: 10px;
   box-shadow: 5px 10px 8px 10px #1111119d;
 }
 
@@ -210,7 +206,7 @@ main {
 
 .principal {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 
