@@ -6,7 +6,6 @@
 }
 
 body {
-  display: grid;
   font-family: Arial;
   background-image: url(/image/bcg.jpg);
   background-repeat: no-repeat;
@@ -31,24 +30,36 @@ header a {
   overflow: hidden;
 
 }
-
 .vertical-menu {
+  margin: auto 0;
   transition: ease .3s;
-  width: 200px;
-  transition: ease .3s;
+  height: fit-content;
+  background: #ffffffbd;
+  border-bottom: #a86603 .4rem ridge;
+  border-top: #a86603 .4rem ridge;
+  border-right: #a86603 .4rem ridge;
+  border-radius: 3px;
+}
+
+.vertical-menu span {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #a86603;
 }
 
 .vertical-menu a {
-  background: #ffffffbd;
-  color: rgb(80, 80);
-  display: flex;
-  padding: 12px;
+  display: block;
+  padding: 5px;
+  color: #5c3701;
+  font-weight: bold;
   transition: ease .3s;
   text-decoration: none;
 }
 
 .vertical-menu a:hover {
   background-color: #ccc;
+  color: #000;
 }
 
 h4 {
@@ -89,10 +100,6 @@ li {
   color: rgba(11, 11, 212, 0.664);
   text-decoration: none;
 
-}
-
-#table-2{
- /*ID das duas ultimas tables     */
 }
 
 .table tr th {
@@ -180,10 +187,11 @@ footer {
 main {
   background: #ffffffbd;
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
+  width: 94%;
+  justify-self: center;
   position: relative;
   text-align: start;
-  display: grid;
   font-family: 'Teko', sans-serif;
   font-size: x-large;
   border: 1px solid;
@@ -203,4 +211,73 @@ main {
 .principal {
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+
+
+
+.search-box{
+  display: flex;
+  position: relative;
+  margin: 10px ;
+  padding: 5px;
+  background: rgba(7, 90, 7, 0.548);
+  border-radius: 5px;
+}
+
+::placeholder{
+  color: #ffffff;
+}
+.result-box{
+  position: absolute;
+  top: 36px;
+  right: 1px;
+  width: 99%;
+  z-index: 1;
+  background-color: rgba(7, 90, 7, 0.548);
+}
+
+.result-box ul{
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+.result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul p:hover{
+  background-color: rgb(17, 94, 17);
+}
+
+.result-box a{
+  padding-left: 5px;
+  text-decoration: none;
+  color: white;
+  display: absolute;
+}
+
+
+input{
+  display: block;
+  background: transparent;
+  grid-row: 1;
+  grid-column: 1;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid {
+  width: 25px;
+  color: rgba(245, 245, 245, 0.719);
+  font-size: 22px;
+  cursor: pointer;
 }

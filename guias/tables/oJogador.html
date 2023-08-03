@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="../../autocomplete.js"></script>
     <header>
         <a href="../../index.html"><h1 class="icon">WikiValley</h1></a>
         <ul class="nav-bar">
@@ -19,6 +20,15 @@
             <li><a href="../../index.html#glossario">Glossary</a></li>
             <li><a href="/guias/html/contact.html">Contact</a></li>
         </ul>
+
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Buscar..." autocomplete="off">        
+            </div>
+            <button><i class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+            <div class="result-box">    
+            </div>
+        </div>
 
     </header>
 

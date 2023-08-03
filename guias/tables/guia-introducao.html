@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <script src="../../autocomplete.js"></script>
     <header>
       <a href="../../index.html"><h1 class="icon">WikiValley</h1></a>
         <ul class="nav-bar">
@@ -20,10 +21,17 @@
             <li><a href="/guias/html/contact.html">Contact</a></li>
         </ul>
 
+        <div class="search-box">
+          <div class="row">
+              <input type="text" id="input-box" placeholder="Buscar..." autocomplete="off">        
+          </div>
+          <button><i class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+          <div class="result-box">    
+          </div>
+      </div>
     </header>
 
     <div class="principal">
-        <div id="sexo">
             <div class="vertical-menu">
                 <a href="guias/html/13dicas-iniciantes.html">Dicas para Iniciantes</a>
                 <a href="#">Link 4</a>
@@ -35,7 +43,6 @@
                 <a href="https://forums.stardewvalley.net" target="_blank">Official Forums</a>
                 <a href="https://www.stardewvalley.net/shop/" target="_blank">Official Merchandise</a>
             </div>
-        </div>
         <main>
             <div class="conteudo">
                 <div class="label-welcome">

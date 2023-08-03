@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const palavraChaves = [
-        { text: 'Guia Introdução', link: 'guias/tables/guia-introducao.html' },
-        { text: 'Jogador', link: 'guias/tables/oJogador.html' },
+        { text: 'Guia Introdução', link: 'http://localhost:5500/guias/tables/guia-introducao.html' },
+        { text: 'Jogador', link: 'http://localhost:5500/guias/tables/oJogador.html' },
         { text: 'Energia', link: '' },
         { text: 'Ciclo do Dia', link: '' },
         { text: 'Saúde', link: '' },
@@ -24,7 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const resultsBox = document.querySelector(".result-box");
       const inputBox = document.getElementById("input-box");
 
-      inputBox.onkeyup = function(){
+        // Funçoes para ativar e desativar o Display
+      function showDisplay() {
+        resultsBox.style.display = "block";
+      }
+      function hideDisplay() {
+        resultsBox.style.display = "none";
+      }
+
+      inputBox.onkeyup = function(event){
           let result = [];
           let input = inputBox.value; 
           if(input.length){
@@ -33,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
               });
             }
           display(result);
+          enterKeyPress(event,result);
       }
       
       function display(result){
@@ -41,13 +50,27 @@ document.addEventListener("DOMContentLoaded", function () {
           });
 
           //Ocultar resultando quando o valor for vazio.
-          if (content.length === 0){
-            resultsBox.style.display = "none";
-          } else {
-            resultsBox.display = "block";
-          } 
-      
-          resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
+        if (content.length === 0){
+            hideDisplay();
+        }else{
+            showDisplay();
+
+            const limitedResults = result.slice(0, 5);
+
+            const content = limitedResults.map((chavefodida) =>{
+                return `<p><a href="${chavefodida.link}">${chavefodida.text}</a></p>`
+            })
+            resultsBox.innerHTML = content.join("");
+        }
+    
       }
     
+      function enterKeyPress(event, result) {
+        //Verificar se a tecla enter foi pressionada.
+        if(event.keyCode === 13 && result.length === 1){
+            //Se ouver apenas um resultado e a tecla enter for pressionada redirecionar para o link.
+            window.location.href = result[0].link;
+        }
+      }
+
   });

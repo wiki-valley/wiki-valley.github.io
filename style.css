@@ -253,11 +253,12 @@ button .fa-solid {
   padding: 15px 10px;
   cursor: pointer;
 }
-.result-box ul li:hover{
+.result-box ul p:hover{
   background-color: rgb(17, 94, 17);
 }
 
 .result-box a{
+  padding-left: 5px;
   text-decoration: none;
   color: white;
   display: absolute;
