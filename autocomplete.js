@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       const resultsBox = document.querySelector(".result-box");
       const inputBox = document.getElementById("input-box");
-      resultsBox.computedStyleMap.display = 'none';
+
       inputBox.onkeyup = function(){
           let result = [];
           let input = inputBox.value; 
@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
               result = palavraChaves.filter((chavefodida)=>{
                   return chavefodida.text.toLowerCase().includes(input.toLowerCase());
               });
-          }else if(input.length == null){
-            resultsBox.computedStyleMap.display = 'none';
-          }
+            }
           display(result);
       }
       
@@ -41,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
           const content = result.map((chavefodida)=>{
               return `<li><a href="${chavefodida.link}">${chavefodida.text}</a></li>`;
           });
+
+          //Ocultar resultando quando o valor for vazio.
+          if (content.length === 0) resultsBox.style.display = "none";
+          else resultsBox.display = "block";
       
           resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
       }

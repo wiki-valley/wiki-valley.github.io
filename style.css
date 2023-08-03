@@ -94,11 +94,8 @@ input{
 }
 
 button{
-  grid-row: 1;
-  grid-column: 2;
-  display: block;
   background: transparent;
-  border: 0;
+  border: 1px solid black;
   outline: 0;
 }
 
@@ -226,21 +223,22 @@ button .fa-solid {
     Div de pesquisa
 */
 .search-box{
-  width: 300px;
+  display: flex;
+  position: relative;
   margin: 10px ;
   background: rgba(7, 90, 7, 0.548);
   border-radius: 5px;
-  
-}
-.row{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  padding: 10px 20px;
+  border: #000 1px solid;
 }
 
 ::placeholder{
   color: #ffffff;
+}
+.result-box{
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  background-color: rgba(7, 90, 7, 0.548);
 }
 
 .result-box ul{
@@ -260,8 +258,8 @@ button .fa-solid {
 .result-box a{
   text-decoration: none;
   color: white;
+  display: absolute;
 }
-  
 
 /* 
     MEDIA QUERIES
