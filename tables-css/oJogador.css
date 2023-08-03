@@ -154,8 +154,8 @@ li {
   padding: 15px 10px;
   cursor: pointer;
 }
-.result-box ul li a:hover{
-  background-color: rgb(0, 255, 0);
+.result-box ul li, p:hover{
+  background-color: rgb(17, 94, 17);
 }
 
 .result-box a{
