@@ -82,6 +82,33 @@ footer {
 }
 
 
+input{
+  display: block;
+  background: transparent;
+  grid-row: 1;
+  grid-column: 1;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+button{
+  grid-row: 1;
+  grid-column: 2;
+  display: block;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid {
+  width: 25px;
+  color: rgba(245, 245, 245, 0.719);
+  font-size: 22px;
+  cursor: pointer;
+}
+
 /* 
     CLASSES E IDS
 */
@@ -212,33 +239,6 @@ footer {
   padding: 10px 20px;
 }
 
-input{
-  display: block;
-  background: transparent;
-  grid-row: 1;
-  grid-column: 1;
-  border: 0;
-  outline: 0;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-button{
-  grid-row: 1;
-  grid-column: 2;
-  display: block;
-  background: transparent;
-  border: 0;
-  outline: 0;
-}
-
-button .fa-solid {
-  width: 25px;
-  color: rgba(245, 245, 245, 0.719);
-  font-size: 22px;
-  cursor: pointer;
-}
-
 ::placeholder{
   color: #ffffff;
 }
@@ -257,6 +257,12 @@ button .fa-solid {
   background-color: rgb(17, 94, 17);
 }
 
+.result-box a{
+  text-decoration: none;
+  color: white;
+}
+  
+
 /* 
     MEDIA QUERIES
 */
@@ -264,6 +270,10 @@ button .fa-solid {
 @media (max-width: 850px) {
   .vertical-menu {
     display: none;
+  }
+
+  .table-tips {
+    grid-template-columns: 1;
   }
 
   .principal {
