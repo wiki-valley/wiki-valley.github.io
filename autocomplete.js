@@ -41,8 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
           });
 
           //Ocultar resultando quando o valor for vazio.
-          if (content.length === 0) resultsBox.style.display = "none";
-          else resultsBox.display = "block";
+          if (content.length === 0){
+            resultsBox.style.display = "none";
+          } else {
+            resultsBox.display = "block";
+          } 
       
           resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
       }

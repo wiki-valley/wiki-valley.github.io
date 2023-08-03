@@ -95,7 +95,7 @@ input{
 
 button{
   background: transparent;
-  border: 1px solid black;
+  border: 0;
   outline: 0;
 }
 
@@ -226,9 +226,9 @@ button .fa-solid {
   display: flex;
   position: relative;
   margin: 10px ;
+  padding: 5px;
   background: rgba(7, 90, 7, 0.548);
   border-radius: 5px;
-  border: #000 1px solid;
 }
 
 ::placeholder{
@@ -236,7 +236,9 @@ button .fa-solid {
 }
 .result-box{
   position: absolute;
-  top: 28px;
+  top: 36px;
+  right: 1px;
+  width: 99%;
   z-index: 1;
   background-color: rgba(7, 90, 7, 0.548);
 }
