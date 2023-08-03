@@ -20,6 +20,9 @@ body {
   font-family: 'StardewFont';
   font-size: 7rem;
 }
+header a {
+  text-decoration: none;
+}
 
 .nav-bar {
   list-style-type: none;
