@@ -111,6 +111,7 @@ h1 {
     height: 100%;
     margin: 0 1rem;
     border-radius: 5px;
+    
 }
 
 .guide {
@@ -123,19 +124,19 @@ h1 {
     justify-items: center;
     align-items: end;
     background-repeat: no-repeat;
-    position: relative;
-}
-
-.guide-fixo {
-    /* position: fixed; Definimos a posição como fixa para manter o elemento fixo na tela */
-    right: 80px; /* Distância do elemento para a direita da página */
-    /* display: flex; */
+    position: relative; 
+    transition: 0.2s ease;
+  }
+  .guide-fixo {
+    right: 80px; 
+    display: flex;
     flex-direction: column;
-    color: #fff; /* Cor do texto do elemento */
-    padding: 5px; /* Espaçamento interno do elemento */
-    border-radius: 3px; /* Borda arredondada */
-}
-
+    color: #fff; 
+    padding: 5px; 
+    border-radius: 3px; 
+    position: grid;
+    overflow: hidden; 
+  }
 .guide a {
     color: #fff;
     font-weight: bold;

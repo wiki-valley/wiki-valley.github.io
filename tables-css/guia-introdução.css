@@ -17,8 +17,9 @@ body {
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-family: 'StardewFont';
-  font-size: 7rem;
+  font-size: 5rem;
 }
+
 header a {
   text-decoration: none;
 }
@@ -30,10 +31,22 @@ header a {
   overflow: hidden;
 
 }
+
 .vertical-menu {
-  margin: auto 0;
+  position: fixed;
+  top: 46.5%;
+  transform: translateY(-50%);
+  /* Position the menu at the top of the viewport */
+  left: 0;
+  /* Position the menu at the left of the viewport */
+  overflow-y: auto;
+  /* Enable vertical scrolling for the menu if needed */
+  max-height: calc(100vh - 120px);
+  /* Limit the menu's height to fit between header and footer */
+  z-index: 0;
+  /* Ensure the menu appears above other elements */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: ease .3s;
-  height: fit-content;
   width: fit-content;
   background: #ffffffbd;
   border-bottom: #a86603 .4rem ridge;
@@ -92,11 +105,13 @@ li {
 .table-tips tr td img {
   width: 32px;
 }
-.table-tips tr th {  
+
+.table-tips tr th {
   background-color: rgb(1, 170, 1);
   text-align: center;
 }
-.table-tips tr td a{
+
+.table-tips tr td a {
   padding-left: 10px;
   color: rgba(11, 11, 212, 0.664);
   text-decoration: none;
@@ -112,6 +127,7 @@ li {
 
   /*CSS da table*/
 }
+
 .table tr td {
   padding: 10px;
   text-align: left;
@@ -121,7 +137,9 @@ li {
 
   /*CSS */
 }
-.table tr, td img{
+
+.table tr,
+td img {
   padding-top: 20px;
   align-self: center;
 }
@@ -146,15 +164,21 @@ header {
   text-align: center;
 }
 
-.list{
+.list {
   display: inline;
+}
+
+audio {
+
+  height: 1rem;
 }
 
 footer {
   grid-column: 1/9;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
   color: white;
+  height: fit-content;
   font-weight: 100;
   background-color: rgba(0, 0, 0, 0.788)
 }
@@ -189,6 +213,7 @@ main {
   padding: 1rem;
   width: 95%;
   text-align: start;
+  grid-column: 2;
   font-family: 'Teko', sans-serif;
   font-size: x-large;
   border: 1px solid;
@@ -205,25 +230,28 @@ main {
 }
 
 .principal {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
+  place-self: center;
 }
 
 
 
-.search-box{
+.search-box {
   display: flex;
   position: relative;
-  margin: 10px ;
+  margin: 10px;
   padding: 5px;
   background: rgba(7, 90, 7, 0.548);
   border-radius: 5px;
 }
 
-::placeholder{
+::placeholder {
   color: #ffffff;
 }
-.result-box{
+
+.result-box {
   position: absolute;
   top: 36px;
   right: 1px;
@@ -232,21 +260,23 @@ main {
   background-color: rgba(7, 90, 7, 0.548);
 }
 
-.result-box ul{
+.result-box ul {
   border-top: 1px solid #999;
   padding: 15px 10px;
 }
-.result-box ul li{
+
+.result-box ul li {
   list-style: none;
   border-radius: 3px;
   padding: 15px 10px;
   cursor: pointer;
 }
-.result-box p:hover{
+
+.result-box p:hover {
   background-color: rgb(17, 94, 17);
 }
 
-.result-box a{
+.result-box a {
   padding-left: 5px;
   text-decoration: none;
   color: white;
@@ -254,7 +284,7 @@ main {
 }
 
 
-input{
+input {
   display: block;
   background: transparent;
   grid-row: 1;
@@ -265,7 +295,7 @@ input{
   color: #ffffff;
 }
 
-button{
+button {
   background: transparent;
   border: 0;
   outline: 0;
