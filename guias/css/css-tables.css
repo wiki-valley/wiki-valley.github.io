@@ -1,9 +1,29 @@
+/* 
+    UTILITÁRIOS
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
 
 @font-face {
   font-family: 'StardewFont';
   src: url('/fonts/Stardew_Valley.ttf');
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* 
+    CSS'S
+*/
 
 body {
   font-family: Arial;
@@ -13,6 +33,86 @@ body {
   background-size: cover;
 }
 
+header a {
+  text-decoration: none;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+li {
+  border-right: 1px;
+  float: left;
+  padding-left: 50px;
+}
+
+header {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(38, 250, 32);
+  background: radial-gradient(circle, rgba(38, 250, 32, 0.5144432773109244) 0%, rgba(26, 89, 27, 0.5676645658263305) 100%);
+  padding: 20px 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+audio {
+
+  height: 1rem;
+}
+
+footer {
+  grid-column: 1/9;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  display: block;
+  height: fit-content;
+  font-weight: 100;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+main {
+  background: #ffffffbd;
+  padding: 1rem;
+  width: 95%;
+  text-align: start;
+  grid-column: 2;
+  font-family: 'Teko', sans-serif;
+  font-size: x-large;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px 10px #1111119d;
+}
+
+input {
+  display: block;
+  background: transparent;
+  grid-row: 1;
+  grid-column: 1;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid {
+  width: 25px;
+  color: rgba(245, 245, 245, 0.719);
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .icon {
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -20,16 +120,11 @@ body {
   font-size: 5rem;
 }
 
-header a {
-  text-decoration: none;
-}
-
 .nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
 
 .vertical-menu {
@@ -76,17 +171,6 @@ header a {
   color: #000;
 }
 
-h4 {
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-li {
-  border-right: 1px;
-  float: left;
-  padding-left: 50px;
-}
-
 .nav-bar a {
   display: block;
   padding: 8px;
@@ -115,7 +199,6 @@ li {
   padding-left: 10px;
   color: rgba(11, 11, 212, 0.664);
   text-decoration: none;
-
 }
 
 .table tr th {
@@ -124,8 +207,6 @@ li {
   text-align: left;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-
-  /*CSS da table*/
 }
 
 .table tr td {
@@ -134,29 +215,12 @@ li {
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-
-  /*CSS */
 }
 
 .table tr,
 td img {
   padding-top: 20px;
   align-self: center;
-}
-
-
-
-header {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(38, 250, 32);
-  background: radial-gradient(circle, rgba(38, 250, 32, 0.5144432773109244) 0%, rgba(26, 89, 27, 0.5676645658263305) 100%);
-  padding: 20px 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 
 .main-container {
@@ -168,21 +232,6 @@ header {
   display: inline;
 }
 
-audio {
-
-  height: 1rem;
-}
-
-footer {
-  grid-column: 1/9;
-  padding-bottom: 10px;
-  text-align: center;
-  color: white;
-  height: fit-content;
-  font-weight: 100;
-  background-color: rgba(0, 0, 0, 0.788)
-}
-
 .nav-vert {
   color: black;
 }
@@ -190,34 +239,9 @@ footer {
 .label-welcome {
   display: inline-block;
   width: fit-content;
-
   text-overflow: unset;
   animation-duration: 3s;
   animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-main {
-  background: #ffffffbd;
-  padding: 1rem;
-  width: 95%;
-  text-align: start;
-  grid-column: 2;
-  font-family: 'Teko', sans-serif;
-  font-size: x-large;
-  border: 1px solid;
-  box-shadow: 5px 10px 8px 10px #1111119d;
 }
 
 .conteudo {
@@ -235,8 +259,6 @@ main {
   grid-template-columns: 1fr 4fr;
   place-self: center;
 }
-
-
 
 .search-box {
   display: flex;
@@ -281,29 +303,4 @@ main {
   text-decoration: none;
   color: white;
   display: absolute;
-}
-
-
-input {
-  display: block;
-  background: transparent;
-  grid-row: 1;
-  grid-column: 1;
-  border: 0;
-  outline: 0;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-button {
-  background: transparent;
-  border: 0;
-  outline: 0;
-}
-
-button .fa-solid {
-  width: 25px;
-  color: rgba(245, 245, 245, 0.719);
-  font-size: 22px;
-  cursor: pointer;
 }

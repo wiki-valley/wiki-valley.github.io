@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'StardewFont';
-  src: url('fonts/Stardew_Valley.ttf');
+  src: url('/fonts/Stardew_Valley.ttf');
 }
 
 @keyframes slidein {

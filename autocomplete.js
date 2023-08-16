@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const palavraChaves = [
-    { text: 'Guia Introdução', link: 'https://wiki-valley.github.io/guias/tables/guia-introducao.html' },
-    { text: 'Jogador', link: 'https://wiki-valley.github.io/guias/tables/oJogador.html' },
+    { text: 'Guia Introdução', link: '/guias/html/guia-introducao.html' },
+    { text: 'Jogador', link: '/guias/html/oJogador.html' },
     { text: 'Energia', link: '' },
     { text: 'Ciclo do Dia', link: '' },
     { text: 'Saúde', link: '' },
     { text: 'Inventário', link: '' },
-    { text: 'Controles', link: '' },
+    { text: 'Controles', link: '/guias/html/controles.html' },
     { text: 'Habilidades', link: '' },
     { text: 'Mapas da Fazenda', link: '' },
     { text: 'Lavouras', link: '' },
