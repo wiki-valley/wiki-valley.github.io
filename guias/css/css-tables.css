@@ -256,6 +256,7 @@ td img {
 .principal {
   position: relative;
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 4fr;
   place-self: center;
 }
@@ -310,4 +311,31 @@ td img {
   height: 2px;
   background-color: #000;
   margin-bottom: 20px;
+}
+
+#exp {
+  border: 2px;
+}
+#exp tr th{
+background-color: green;
+color: white;
+text-align: center;
+padding: 2px;
+}
+
+/* 
+  MEDIA-QUERIES 
+*/
+
+@media (max-width: 850px) {
+  .vertical-menu {
+    display: none;
+  }
+
+  .principal {
+    width: 90%;
+    margin: 0px 1vw;
+    grid-template-columns: 1fr;
+    place-self: center;
+  } 
 }
