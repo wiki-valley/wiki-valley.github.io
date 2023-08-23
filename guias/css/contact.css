@@ -16,13 +16,13 @@ header a {
 }
 
 .contact-container{
-    color: white;
+    color: #000;
     align-content: center;
 }
 
 main 
 {
-        background: #000000bd;
+        background: rgba(209,248,255,0.67);
         padding: 1rem;
         margin: 2rem;
         text-align: start;

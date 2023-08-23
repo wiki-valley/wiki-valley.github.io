@@ -56,26 +56,370 @@
         </div>
         <main>
             <div class="conteudo">
+                <h2>Mapas da Fazenda</h2>
+                <span class="device"></span>
+                <div style="display: grid;">
+                    <div
+                        style="grid-column: 4; background-color: rgba(255,255,255,0.58); padding: 5px; height: fit-content; border: 1px solid #8DCAF0;">
+                        <img style="border: 1px solid #ccc; width: 100%;"
+                            src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e5/Farm_Map_Selection.png/300px-Farm_Map_Selection.png"
+                            alt="">
+                        <p style="font-family: Arial; font-size: small; text-overflow: clip; word-wrap: break-word;">
+                            A área de seleção de mapas na criação de personagens.
+                        </p>
+                    </div>
+                    <p style="grid-column: 1; grid-row: 1;">
+                        Há sete diferentes <b>Mapas de Fazenda</b> para escolher em Stardew Valley. Cada mapa oferece um
+                        layout único da Fazenda, oferecendo diferentes benefícios e favorecendo Habilidades
+                        específicas. Apenas um mapa pode ser escolhido quando se inicia um novo jogo, e não pode ser
+                        alterado uma vez selecionado.
+                        <br>
+                        A Fazenda Padrão oferece o maior espaço para plantar e criar Animais. As outras seis
+                        fazendas carecem de área agrícola, mas oferecem vantagens especiais em comparação:
+                        <br>
+                        &emsp; A Fazenda Padrão incentiva Agricultura.
+                        <br>
+                        &emsp; A Fazenda entre Riachos incentiva Pescaria.
+                        <br>
+                        &emsp; A Fazenda na Floresta incentiva Coleta.
+                        <br>
+                        &emsp; A Fazenda na Colina incentiva Mineração.
+                        <br>
+                        &emsp; A Fazenda Remota incentiva Combate.
+                        <br>
+                        &emsp; A Fazenda Quatro Cantos oferece vantagens de outros mapas e incentiva Multijogador.
+                        <br>
+                        &emsp; A Fazenda na Praia oferece itens extras e incentiva Pescaria e Coleta
+                    </p>
+                    <p>
+                        O interior da Casa da Fazenda é decorado para combinar com o tema do mapa escolhido. Isso inclui
+                        Móveis, Papel de parede e Pisos. O exterior da casa é o mesmo, independentemente da escolha do
+                        mapa.
+                        <br>
+                        Há um edifício abandonado que pode mais tarde ser transformado em sua Estufa em todos os mapas.
+                    </p>
+                </div>
+                <h2>Tipos de Mapas</h2>
+                <span class="device"></span>
+                <table class="wikitable">
+                    <tbody>
+                        <tr>
+                            <th>Nome
+                            </th>
+                            <th>Mapa
+                            </th>
+                            <th>Descrição
+                            </th>
+                            <th>Habilidade Associada
+                            </th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;" id="Fazenda_Padr.C3.A3o">
+                                <img alt="Standard Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/0/05/Standard_Farm_Map_Icon.png" />Fazenda
+                                Padrão
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewcommunitywiki.com/mediawiki/images/thumb/d/de/Standard_Farm.png/735px-Standard_Farm.png"
+                                    target="_blank">
+                                    <img alt="Standard Farm thumb.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6f/Standard_Farm_thumb.png/200px-Standard_Farm_thumb.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <li>
+                                    A maioria deste mapa é terra de Cultivo, ideal para Lavouras e Animais.
+                                </li>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <img alt="Farming Skill Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/82/Farming_Skill_Icon.png/24px-Farming_Skill_Icon.png" />
+                                Agricultura
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_entre_Riachos">
+                                <img alt="Riverland Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/4/4a/Riverland_Farm_Map_Icon.png" />
+                                Fazenda entre Riachos
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ad/Riverlands_Farm.png/735px-Riverlands_Farm.png"
+                                    title="Ficheiro:Riverlands Farm.png">
+                                    <img alt="Riverlands Farm thumb.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ae/Riverlands_Farm_thumb.png/200px-Riverlands_Farm_thumb.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+
+                                <li>
+                                    A maioria deste mapa é água. A Pesca é viável nesta fazenda..
+                                </li>
+                                <dl>
+                                    <dd>
+                                        <li>
+                                            Os jogadores podem pegar os mesmos peixes que são encontrados na Vila
+                                            Pelicanos.
+                                        </li>
+                                    </dd>
+                                </dl>
+                                <li>A água diminui significativamente a quantidade de área de cultivo.</li>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <img alt="Fishing Skill Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e7/Fishing_Skill_Icon.png/24px-Fishing_Skill_Icon.png" />Pesca
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_na_Floresta">
+                                <img alt="Forest Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/7/77/Forest_Farm_Map_Icon.png" />Fazenda
+                                na Floresta
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/6/64/Forest_Farm.png"
+                                    title="Ficheiro:Forest Farm.png" target="_blank">
+                                    <img alt="Forest Farm thumb.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/bc/Forest_Farm_thumb.png/200px-Forest_Farm_thumb.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <ul>
+                                    <li>
+                                        Muitas Árvores são encontradas em todo o mapa.
+                                    </li>
+                                    <li>Os seguintes itens aparecem na área oeste do mapa:</li>
+                                </ul>
+                                <dl>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                8 Tocos grandes renováveis (Madeira de lei)
+                                            </li>
+                                            <li>
+                                                Artigos de Coleta sazonais (itens específicos do Bosque Secreto)
+                                            </li>
+                                            <li>
+                                                Ervas únicas que sempre derrubam Sementes mistas
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <ul>
+                                    <li>Penhascos e lagoas adicionais diminuem a área agrícola em geral.</li>
+                                </ul>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <img alt="Foraging Skill Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f1/Foraging_Skill_Icon.png/24px-Foraging_Skill_Icon.png" />
+                                Coleta
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_na_Colina">
+                                <img alt="Hilltop Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/7/74/Hilltop_Farm_Map_Icon.png" />
+                                Fazenda na Colina
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/4/40/Hilltop_Farm.png"
+                                    title="Ficheiro:Hilltop Farm.png" target="_blank">
+                                    <img alt="Hilltop Farm thumb.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Hilltop_Farm_thumb.png/200px-Hilltop_Farm_thumb.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <li>
+                                    Uma área de mineração especial, na parte sudoeste do mapa, gera os seguintes
+                                    itens:
+                                </li>
+                                <li>
+                                    Pedras
+                                </li>
+                                <li>
+                                    Minérios
+                                </li>
+                                <li>
+                                    Geodos
+                                </li>
+                                <li style="list-style-type: none;">
+                                    <i>
+                                        Os tipos de minérios que aparecem é relativo ao nível de mineração do
+                                        jogador.
+                                    </i>
+                                </li>
+                                <li>
+                                    Penhascos adicionais e um córrego diminuem a área agrícola total.
+                                </li>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <img alt="Mining Skill Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2f/Mining_Skill_Icon.png/24px-Mining_Skill_Icon.png" />
+                                Mineração
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_Remota">
+                                <img alt="Wilderness Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/3/36/Wilderness_Farm_Map_Icon.png" />
+                                Fazenda Remota
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/f/fd/Wilderness_Farm.png"
+                                    title="Ficheiro:Wilderness Farm.png" target="_blank">
+                                    <img alt="Wilderness Farm thumb.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2a/Wilderness_Farm_thumb.png/200px-Wilderness_Farm_thumb.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <li>
+                                    Monstros aparecem à noite (escalas com nível de Combate do jogador).<br>
+                                    Golem selvagem é exclusivo deste mapa.
+                                </li>
+                                <li>
+                                    Penhascos Adicionais e lagoas diminuem a área agrícola em geral.
+                                </li>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <img alt="Combat Skill Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/cf/Combat_Skill_Icon.png/24px-Combat_Skill_Icon.png" />Combate
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_Quatro_Cantos">
+                                <img alt="Four Corners Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/2/29/Four_Corners_Farm_Map_Icon.png" />Fazenda
+                                Quatro Cantos
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/c/c5/Four_Corners_Farm.png"
+                                    class="image" target="_blank">
+                                    <img alt="Four Corners Farm.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c5/Four_Corners_Farm.png/200px-Four_Corners_Farm.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <li>
+                                    A área da fazenda é dividida em quatro áreas distintas, cada uma com algo das
+                                    outras fazendas.
+                                </li>
+                                <li>
+                                    Superior esquerdo: Fazenda na floresta. Esta parte possui uma pequena área
+                                    gramada, contendo um toco grande.
+                                </li>
+                                <li>
+                                    Superior direito: Fazenda padrão. Essa parte possui a maior área cultivável.
+                                </li>
+                                <li>
+                                    Inferior esquerdo: Fazenda entre Riachos. Esta parte possui um lago na parte
+                                    inferior. Os jogadores podem pegar peixes e lixo aqui.
+                                </li>
+                                <li>
+                                    Inferior direito: Fazenda na colina. Esta parte possui uma pequena pedreira de
+                                    11x3, que gera pedras, minérios e geodos.
+                                </li>
+                                <li>
+                                    Penhascos e lagos adicionais diminuem a área cultivável total.
+                                </li>
+                            </td>
+                            <td style="padding-left:0.4em;" class="no-wrap">
+                                <img alt="Multiplayer Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7a/Multiplayer_Icon.png/24px-Multiplayer_Icon.png" />
+                                Multijogador
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;" id="Fazenda_na_Praia">
+                                <img alt="Beach Farm Map Icon.png"
+                                    src="https://stardewvalleywiki.com/mediawiki/images/8/81/Beach_Farm_Map_Icon.png" />
+                                Fazenda na Praia
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="https://stardewvalleywiki.com/mediawiki/images/d/d9/Beach_Farm.png"
+                                    class="image" target="_blank">
+                                    <img alt="Beach Farm.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d9/Beach_Farm.png/200px-Beach_Farm.png" />
+                                </a>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <li>
+                                    Bom para coleta e pesca, e muito espaço aberto. Às vezes, caixas de suprimento
+                                    chegam à costa.
+                                </li>
+                                <li>
+                                    Tanto as coletas da floresta quanto as da praia podem aparecer.
+                                </li>
+                                <li>
+                                    Os aspersores não funcionam no solo arenoso.
+                                </li>
+                                <li>
+                                    Destinado a "jogadores experientes", não como primeira fazenda.
+                                </li>
+                                <li>
+                                    O número de ladrilhos cultiváveis ​​neste mapa é 2.700, com 1.928 ladrilhos não lavráveis, mas construíveis.
+                                </li>
+                                <li>
+                                    Há um patch de 202 ladrilhos (10x20 mais 2) onde os aspersores podem ser colocados.
+                                </li>
+                                <ul>
+                                    <li>
+                                        <h6><b>Ao pescar:</b></h6>
+                                    </li>
+                                </ul>
+
+                                <li>15% das vezes, os jogadores pegarão Seaweed .</li>
+                                <li>
+                                    5,1% das vezes, os jogadores pegarão um dos Ostra, Coral, Mexilhão ou Berbigão.  As chances de cada item são iguais
+                                </li>
+                                <li>Em 52,73% das vezes, os jogadores irão pescar peixes oceânicos , ou seja, peixes que são encontrados na Praia .</li>
+                                <li>27,17% das vezes, os jogadores vão pegar lixo.</li>
+                            </td>
+                            <td style="padding-left:0.4em;">
+                                <p>
+                                    <img alt="Foraging Skill Icon.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f1/Foraging_Skill_Icon.png/24px-Foraging_Skill_Icon.png"/>
+                                    Coleta
+                                </p>
+                                <p>
+                                    <img alt="Fishing Skill Icon.png"
+                                        src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e7/Fishing_Skill_Icon.png/24px-Fishing_Skill_Icon.png" /> Pesca
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>História</h2>
+                <span class="device"></span>
+                <li>
+                    1.0: Introduzido o mapa da Fazenda Padrão.
+                </li>
+                <li>
+                    1.1: Adicionados os mapas da Fazenda Floresta, na Colina, entre Riachos, e Remota.
+                </li>
+                <li>
+                    1.4: Adicionado o mapa da Fazenda Quatro Cantos.
+                </li>
+                <li>
+                    1.5: Adicionado o mapa da Fazenda na Praia.
+                </li>
             </div>
         </main>
-
-        <footer>
-            <p>Atenção: Esse website foi desenvolvido com o intuito educativo para aprendizagem na construção de
-                websites
-                pela universidade do Instito Federal do Paraná, Campus Umuarama.</p>
-            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/cauã-silva-de-moraes-191b98227/"
-                    target="_blank">Cauã
-                    Silva de Moraes</a> e <a href="https://www.linkedin.com/in/edudfrs/" target="_blank">Eduardo
-                    Fernandes
-                    da Silva</a></p>
-            <audio controls autoplay>
-                <source class="music" src="sv-music.mp3" type="audio/mpeg">
-            </audio>
-            <p>Créditos a <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki">Stardew Valley Wiki</a></p>
-            <p>Conteúdo disponibilizado nos termos da <a
-                    href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative
-                    Commons Attribution-NonCommercial-ShareAlike</a>, salvo indicação em contrário.</p>
-        </footer>
+    </div>
+    <footer>
+        <p>Atenção: Esse website foi desenvolvido com o intuito educativo para aprendizagem na construção de
+            websites
+            pela universidade do Instito Federal do Paraná, Campus Umuarama.</p>
+        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/cauã-silva-de-moraes-191b98227/" target="_blank">Cauã
+                Silva de Moraes</a> e <a href="https://www.linkedin.com/in/edudfrs/" target="_blank">Eduardo
+                Fernandes
+                da Silva</a></p>
+        <audio controls autoplay>
+            <source class="music" src="sv-music.mp3" type="audio/mpeg">
+        </audio>
+        <p>Créditos a <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki">Stardew Valley Wiki</a></p>
+        <p>Conteúdo disponibilizado nos termos da <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative
+                Commons Attribution-NonCommercial-ShareAlike</a>, salvo indicação em contrário.</p>
+    </footer>
 </body>
 
 </html>

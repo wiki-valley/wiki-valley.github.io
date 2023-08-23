@@ -78,15 +78,15 @@ footer {
 }
 
 main {
-  background: #ffffffbd;
+  background: rgba(209,248,255,0.67);
   padding: 1rem;
-  width: 95%;
+  width: fit-content;
   text-align: start;
-  grid-column: 2;
   font-family: 'Teko', sans-serif;
   font-size: 16pt;
   border: 1px solid;
-  box-shadow: 5px 10px 8px 10px #1111119d;
+  border-bottom: 0px;
+  border-top: 0px;
 }
 
 input {
@@ -256,8 +256,9 @@ td img {
 .principal {
   position: relative;
   display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 4fr;
+  width: 75%;
+  margin-left: 20vw;
+  grid-template-columns: 1fr;
   place-self: center;
 }
 

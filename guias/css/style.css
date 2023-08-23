@@ -47,7 +47,7 @@ header {
 }
 
 main {
-  background: #ffffffbd;
+  background: rgba(209,248,255,0.67);
   padding: 1rem;
   margin: 1rem;
   width: 94%;
