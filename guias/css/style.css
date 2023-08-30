@@ -9,17 +9,6 @@
   src: url('/fonts/Stardew_Valley.ttf');
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
 /* 
     CSS'S
@@ -47,7 +36,7 @@ header {
 }
 
 main {
-  background: rgba(209,248,255,0.67);
+  background: rgba(209, 248, 255, 0.67);
   padding: 1rem;
   margin: 1rem;
   width: 94%;
@@ -82,7 +71,7 @@ footer {
 }
 
 
-input{
+input {
   display: block;
   background: transparent;
   grid-row: 1;
@@ -93,7 +82,7 @@ input{
   color: #ffffff;
 }
 
-button{
+button {
   background: transparent;
   border: 0;
   outline: 0;
@@ -137,7 +126,7 @@ button .fa-solid {
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-family: 'StardewFont';
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 .principal {
@@ -219,22 +208,24 @@ button .fa-solid {
   width: 2rem;
   height: auto;
 }
+
 /*
     Div de pesquisa
 */
-.search-box{
+.search-box {
   display: flex;
   position: relative;
-  margin: 10px ;
+  margin: 10px;
   padding: 5px;
   background: rgba(7, 90, 7, 0.548);
   border-radius: 5px;
 }
 
-::placeholder{
+::placeholder {
   color: #ffffff;
 }
-.result-box{
+
+.result-box {
   position: absolute;
   top: 36px;
   right: 1px;
@@ -243,25 +234,90 @@ button .fa-solid {
   background-color: rgba(7, 90, 7, 0.548);
 }
 
-.result-box ul{
+.result-box ul {
   border-top: 1px solid #999;
   padding: 15px 10px;
 }
-.result-box ul li{
+
+.result-box ul li {
   list-style: none;
   border-radius: 3px;
   padding: 15px 10px;
   cursor: pointer;
 }
-.result-box p:hover{
+
+.result-box p:hover {
   background-color: rgb(17, 94, 17);
 }
 
-.result-box a{
+.result-box a {
   padding-left: 5px;
   text-decoration: none;
   color: white;
   display: absolute;
+}
+
+.container{
+  display: grid;
+  place-self: center;
+  height: 80vh;
+  margin: 0;
+  box-shadow: none;
+  border: 0px;
+}
+
+.login {
+  border-radius: 5px;
+  font-size: 20pt;
+  place-self: center;
+  background-color: #fff;
+  padding: 50px 120px;
+}
+
+.login input {
+  background-color: #ffffffce;
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+  color: #000;
+  padding: 8px;
+  font-size: 20pt;
+}
+
+.login input::placeholder {
+  color: #4e4e4e;
+  font-size: 20pt;
+}
+
+#button-login {
+  background-color: #0554ff;
+  color: #fff;
+  place-self: center;
+  margin: 5px;
+  display: grid;
+  font-size:12pt;
+  border-radius: 50px;
+  padding: 5px 20px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+#button-cadastro {
+  background-color: #fff;
+  color: #0554ff;
+  place-self: center;
+  margin: 5px;
+  display: grid;
+  font-size:12pt;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 20px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#sexo {
+  display: grid;
 }
 
 /* 
