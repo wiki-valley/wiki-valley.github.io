@@ -30,7 +30,6 @@ main {
     text-align: start;
     display: grid;
     position: relative;
-    padding-bottom: 30rem;
     place-content: center;
 }
 
@@ -46,7 +45,19 @@ input:only-of-type {
 input[type=submit], input[type=reset]  {
     background-color: #090067;
     color: #e9e7ff;
+    border: none;
+    text-align: center;
+    transition: ease .3s;
+    padding: 5px 10px;
 }
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #0d00a4;
+    color: #e9e7ff;
+    border: none;
+    text-align: center;
+    padding: 5px 10px;
+}
+
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -54,6 +65,12 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+input::-webkit-outter-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
 #comment {
     border-radius: 4px;
     border: 1px solid #ccc;
