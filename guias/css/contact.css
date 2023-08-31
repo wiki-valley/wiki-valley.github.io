@@ -1,36 +1,89 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
-    @font-face {
-        font-family: 'StardewFont';
-        src: url('/fonts/Stardew_Valley.ttf');
-    }
 
-.icon{
+@font-face {
+    font-family: 'StardewFont';
+    src: url('/fonts/Stardew_Valley.ttf');
+}
+
+.icon {
     color: #ffffff;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'StardewFont';
-    font-size: 7rem; 
+    font-size: 7rem;
 }
+
 header a {
     text-decoration: none;
 }
 
-.contact-container{
+.contact-container {
     color: #000;
     align-content: center;
+    justify-content: center;
+    display: grid;
 }
 
-main 
-{
-        background: rgba(209,248,255,0.67);
-        padding: 1rem;
-        margin: 2rem;
-        text-align: start;
-        display: grid;
-        position: relative;
-        padding-bottom: 30rem;
+main {
+    background: rgba(209, 248, 255, 0.67);
+    padding: 1rem;
+    margin: 0 2rem;
+    text-align: start;
+    display: grid;
+    position: relative;
+    padding-bottom: 30rem;
+    place-content: center;
 }
-body { 
+
+input {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+input:only-of-type {
+    width: 40vw;
+}
+input[type=submit], input[type=reset]  {
+    background-color: #090067;
+    color: #e9e7ff;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#comment {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-overflow: clip;
+    height: 40vh;
+    width: 40vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: grid;
+    place-content: start;
+    resize: none;
+    place-items: start;
+    font-size: 14pt;
+}
+
+#comment::-webkit-scrollbar {
+    width: .5em;
+}
+
+#comment::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 54px;
+    height: 100px;
+}
+
+form p {
+    font-weight: bold;
+}
+
+body {
     display: grid;
     font-family: Arial;
     background-image: url(/image/bcg.jpg);
@@ -38,19 +91,22 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-li{
+
+li {
     border-right: 1px;
     float: left;
     padding-left: 50px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
-    
+    overflow: hidden;
+
 }
-li a{
+
+li a {
     display: block;
     padding: 8px;
     text-decoration: none;
@@ -60,31 +116,28 @@ li a{
     transition: ease;
     transition-duration: .2s;
 }
+
 li a:hover:not(.active) {
     color: rgb(44, 43, 43);
-  }
+}
 
-header{
+header {
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgb(38,250,32);
-    background: radial-gradient(circle, rgba(38,250,32,0.5144432773109244) 0%, rgba(26,89,27,0.5676645658263305) 100%);
+    background: rgb(38, 250, 32);
+    background: radial-gradient(circle, rgba(38, 250, 32, 0.5144432773109244) 0%, rgba(26, 89, 27, 0.5676645658263305) 100%);
     padding: 20px 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    
+
 }
 
-
-footer{
+footer {
     padding-bottom: 20px;
     text-align: center;
     color: white;
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.788)
-    
 }
-
-
